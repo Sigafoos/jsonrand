@@ -30,6 +30,5 @@ func (r *String) Load(filename string) {
 // Element returns a random element from the loaded file.
 func (r *String) Element() string {
 	i := rand.Intn(len(r.elements) - 1)
-	fmt.Println(i)
 	return r.elements[i]
 }
